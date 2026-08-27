@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>32+ — Премиальная стоматологическая клиника</title>
+<meta name="description" content="Мы не делаем зубы. Мы лечим людей. Премиальная стоматология полного цикла: имплантация, протезирование, отбеливание, ортодонтия.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230a0a0a'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='24' font-weight='700' fill='%23c9a96e' text-anchor='middle'%3E32%2B%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- HEADER (sticky, matches hero nav style but persists on scroll) -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav-inner">
+    <span class="logo">32<span class="accent">+</span></span>
+
+    <div class="nav-links" id="mainNav">
+      <a href="#services" class="nav-link">Услуги</a>
+      <a href="#about" class="nav-link">О клинике</a>
+      <a href="#doctors" class="nav-link">Врачи</a>
+      <a href="#testimonials" class="nav-link">Отзывы</a>
+      <a href="#contacts" class="nav-link">Контакты</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="tel:+73424249500" class="nav-link phone-link">+7 (3424) 24-95-00</a>
+      <button type="button" class="btn btn-outline btn-sm" data-open-booking>Записаться</button>
+      <button class="icon-btn" id="menuToggle" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image:url('assets/img/hero.jpg')"></div>
+    <div class="hero-gradient-b"></div>
+    <div class="hero-gradient-r"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <span class="eyebrow-outline reveal-up">Стоматология · с 2002 года</span>
+        <h1 class="hero-title reveal-up" style="animation-delay:.3s">
+          МЫ НЕ ДЕЛАЕМ<br>
+          <span class="shimmer-text">ЗУБЫ.</span><br>
+          МЫ ЛЕЧИМ<br>
+          ЛЮДЕЙ.
+        </h1>
+        <div class="hero-actions reveal-up" style="animation-delay:.6s">
+          <button type="button" class="btn btn-primary btn-lg glow-btn" data-open-booking>Записаться на приём</button>
+          <a href="#services" class="link-inline">
+            Узнать больше
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="rating-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" class="star-icon"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"/></svg>
+        <span>Рейтинг 4.9 · 1200+ отзывов</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-bar">
+    <div class="stats-inner">
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-num shimmer-text" data-count="20" data-suffix="+">0</span>
+        <span class="stat-label">Лет опыта</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num shimmer-text" data-count="68000" data-suffix="+">0</span>
+        <span class="stat-label">Пациентов</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num shimmer-text" data-count="54">0</span>
+        <span class="stat-label">Специалиста</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num shimmer-text" data-count="12">0</span>
+        <span class="stat-label">Направлений</span>
+      </div>
+      <div class="stat-cta">
+        <button type="button" class="btn btn-primary" data-open-booking>Записаться на консультацию</button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span class="ticker-item"><i></i>Имплантация</span>
+      <span class="ticker-item"><i></i>Протезирование</span>
+      <span class="ticker-item"><i></i>Отбеливание</span>
+      <span class="ticker-item"><i></i>Ортодонтия</span>
+      <span class="ticker-item"><i></i>Хирургия</span>
+      <span class="ticker-item"><i></i>Эстетика</span>
+      <span class="ticker-item"><i></i>Имплантация</span>
+      <span class="ticker-item"><i></i>Протезирование</span>
+      <span class="ticker-item"><i></i>Отбеливание</span>
+      <span class="ticker-item"><i></i>Ортодонтия</span>
+      <span class="ticker-item"><i></i>Хирургия</span>
+      <span class="ticker-item"><i></i>Эстетика</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Наши услуги</p>
+        <h2 class="h2">Все направления<br><span class="muted">стоматологии</span><br>в одной клинике</h2>
+      </div>
+      <button type="button" id="allServicesBtn" class="link-inline gold">
+        Все услуги
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
+      </button>
+    </div>
+
+    <div class="row-grid services-grid">
+      <article class="card service-card">
+        <div class="card-media" style="height:220px">
+          <img src="assets/img/service-implant.jpg" alt="Имплантация" loading="lazy">
+          <div class="media-fade"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label">Хирургия</p>
+          <h3 class="card-title">Имплантация</h3>
+        </div>
+      </article>
+
+      <article class="card service-card">
+        <div class="card-media" style="height:220px">
+          <img src="assets/img/service-veneers.jpg" alt="Протезирование" loading="lazy">
+          <div class="media-fade"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label">Ортопедия</p>
+          <h3 class="card-title">Протезирование</h3>
+        </div>
+      </article>
+
+      <article class="card service-card">
+        <div class="card-media" style="height:220px">
+          <img src="assets/img/service-whitening.jpg" alt="Отбеливание" loading="lazy">
+          <div class="media-fade"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label">Эстетика</p>
+          <h3 class="card-title">Отбеливание</h3>
+        </div>
+      </article>
+
+      <article class="card service-card">
+        <div class="card-media" style="height:220px">
+          <img src="assets/img/service-aligner.jpg" alt="Ортодонтия" loading="lazy">
+          <div class="media-fade"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label">Исправление прикуса</p>
+          <h3 class="card-title">Ортодонтия</h3>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="hairline"></div>
+
+  <!-- PRECISION -->
+  <section class="section" id="about">
+    <div class="precision-grid">
+      <div class="precision-text">
+        <p class="eyebrow">Технологии</p>
+        <h2 class="h2">Точность<br>в каждой детали</h2>
+        <p class="lead">Мы используем цифровое 3D-сканирование, томографию CBCT и CAD/CAM технологии для создания идеальных реставраций с первого раза.</p>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="feature-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2m10 0h2a2 2 0 0 1 2 2v2m0 10v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2m5-3s1.5 2 4 2s4-2 4-2M9 9h.01M15 9h.01"/></svg>
+            </span>
+            <span>3D томография CBCT</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v2m0-20v2m5 16v2m0-20v2M2 12h2m-2 5h2M2 7h2m16 5h2m-2 5h2M20 7h2M7 20v2M7 2v2"/><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="8" height="8" x="8" y="8" rx="1"/></svg>
+            </span>
+            <span>CAD/CAM фрезеровка</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15.914 4a1.5 1.5 0 0 0-2.474-1.561l-9 9A1.5 1.5 0 0 0 5.5 14h4.002a.5.5 0 0 1 .471.666L8.086 20a1.5 1.5 0 0 0 2.475 1.56l9-9A1.5 1.5 0 0 0 18.5 10h-3.997a.5.5 0 0 1-.472-.667z"/></svg>
+            </span>
+            <span>Лазерное лечение</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="precision-media">
+        <img src="assets/img/precision.jpg" alt="Высокоточное диагностическое оборудование" loading="lazy">
+        <div class="precision-fade"></div>
+        <div class="media-chip">
+          <p class="chip-label">Точность</p>
+          <p class="chip-value">0.1 <span class="gold">мм</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hairline"></div>
+
+  <!-- DOCTORS -->
+  <section class="section" id="doctors">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Команда</p>
+        <h2 class="h2">Люди, которым<br>вы доверяете</h2>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="docPrev" aria-label="Предыдущие врачи">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18l-6-6l6-6"/></svg>
+        </button>
+        <button class="carousel-btn active" id="docNext" aria-label="Следующие врачи">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18l6-6l-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="doctors-viewport">
+    <div class="row-grid doctors-grid" id="doctorsTrack">
+      <article class="card doctor-card">
+        <div class="card-media" style="height:280px">
+          <img src="assets/img/doc-real-tselishchev.jpg" alt="Олег Целищев" loading="lazy">
+          <div class="media-fade soft"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label gold">Стоматолог-ортопед</p>
+          <h3 class="card-title">Олег Целищев</h3>
+          <p class="sub-label">20 лет опыта</p>
+        </div>
+      </article>
+
+      <article class="card doctor-card">
+        <div class="card-media" style="height:280px">
+          <img src="assets/img/doc-real-tselishcheva.jpg" alt="Анна Целищева" loading="lazy">
+          <div class="media-fade soft"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label gold">Хирург-имплантолог</p>
+          <h3 class="card-title">Анна Целищева</h3>
+          <p class="sub-label">9 лет опыта</p>
+        </div>
+      </article>
+
+      <article class="card doctor-card">
+        <div class="card-media" style="height:280px">
+          <img src="assets/img/doc-real-elkhov.jpg" alt="Константин Елхов" loading="lazy">
+          <div class="media-fade soft"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label gold">Стоматолог-терапевт</p>
+          <h3 class="card-title">Константин Елхов</h3>
+          <p class="sub-label">17 лет опыта</p>
+        </div>
+      </article>
+
+      <article class="card doctor-card">
+        <div class="card-media" style="height:280px">
+          <img src="assets/img/doc-real-chodrishvili.jpg" alt="Светлана Чодришвили" loading="lazy">
+          <div class="media-fade soft"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label gold">Стоматолог-ортопед</p>
+          <h3 class="card-title">Светлана Чодришвили</h3>
+          <p class="sub-label">34 года опыта</p>
+        </div>
+      </article>
+
+      <article class="card doctor-card">
+        <div class="card-media" style="height:280px">
+          <img src="assets/img/doc-real-lukina.jpg" alt="Ольга Лукина" loading="lazy">
+          <div class="media-fade soft"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label gold">Гигиенист-пародонтолог</p>
+          <h3 class="card-title">Ольга Лукина</h3>
+          <p class="sub-label">Гигиена и пародонтология</p>
+        </div>
+      </article>
+
+      <article class="card doctor-card">
+        <div class="card-media" style="height:280px">
+          <img src="assets/img/doc-real-bashkirtseva.jpg" alt="Наталья Башкирцева" loading="lazy">
+          <div class="media-fade soft"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label gold">Детский стоматолог</p>
+          <h3 class="card-title">Наталья Башкирцева</h3>
+          <p class="sub-label">Детская стоматология</p>
+        </div>
+      </article>
+
+      <article class="card doctor-card">
+        <div class="card-media" style="height:280px">
+          <img src="assets/img/doc-real-lang.jpg" alt="Татьяна Ланг" loading="lazy">
+          <div class="media-fade soft"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label gold">Врач-терапевт</p>
+          <h3 class="card-title">Татьяна Ланг</h3>
+          <p class="sub-label">50 лет опыта</p>
+        </div>
+      </article>
+
+      <article class="card doctor-card">
+        <div class="card-media" style="height:280px">
+          <img src="assets/img/doc-real-zhukova.jpg" alt="Ирина Жукова" loading="lazy">
+          <div class="media-fade soft"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label gold">Врач-терапевт</p>
+          <h3 class="card-title">Ирина Жукова</h3>
+          <p class="sub-label">30+ лет опыта</p>
+        </div>
+      </article>
+
+      <article class="card doctor-card">
+        <div class="card-media" style="height:280px">
+          <img src="assets/img/doc-real-gerbengagen.jpg" alt="Марина Гербенгаген" loading="lazy">
+          <div class="media-fade soft"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label gold">Врач-терапевт</p>
+          <h3 class="card-title">Марина Гербенгаген</h3>
+          <p class="sub-label">30+ лет опыта</p>
+        </div>
+      </article>
+
+      <article class="card doctor-card">
+        <div class="card-media" style="height:280px">
+          <img src="assets/img/doc-real-antipina.jpg" alt="Антонина Антипина" loading="lazy">
+          <div class="media-fade soft"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label gold">Врач-терапевт</p>
+          <h3 class="card-title">Антонина Антипина</h3>
+          <p class="sub-label">15 лет опыта</p>
+        </div>
+      </article>
+
+      <article class="card doctor-card">
+        <div class="card-media" style="height:280px">
+          <img src="assets/img/doc-real-busygina.jpg" alt="Ольга Бусыгина" loading="lazy">
+          <div class="media-fade soft"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label gold">Врач-терапевт</p>
+          <h3 class="card-title">Ольга Бусыгина</h3>
+          <p class="sub-label">Лечение каналов</p>
+        </div>
+      </article>
+
+      <article class="card doctor-card">
+        <div class="card-media" style="height:280px">
+          <img src="assets/img/doc-real-shestakova.jpg" alt="Юлия Шестакова" loading="lazy">
+          <div class="media-fade soft"></div>
+        </div>
+        <div class="card-body">
+          <p class="cat-label gold">Стоматолог-терапевт</p>
+          <h3 class="card-title">Юлия Шестакова</h3>
+          <p class="sub-label">Эстетическая реставрация</p>
+        </div>
+      </article>
+    </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section-card-bg">
+    <div class="wrap">
+    <p class="eyebrow">Как мы работаем</p>
+    <h2 class="h2">Простой путь<br>к здоровой улыбке</h2>
+
+    <div class="row-grid process-grid">
+      <div class="process-step">
+        <span class="step-num">01</span>
+        <div class="step-line"></div>
+        <h4 class="step-title">Консультация</h4>
+        <p class="step-desc">Знакомство с врачом, осмотр, составление индивидуального плана лечения</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">02</span>
+        <div class="step-line"></div>
+        <h4 class="step-title">Диагностика</h4>
+        <p class="step-desc">3D-снимок, анализы, полная картина состояния здоровья полости рта</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">03</span>
+        <div class="step-line"></div>
+        <h4 class="step-title">Лечение</h4>
+        <p class="step-desc">Точное выполнение плана с использованием современного оборудования</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">04</span>
+        <div class="step-line"></div>
+        <h4 class="step-title">Поддержка</h4>
+        <p class="step-desc">Наблюдение, гигиенические процедуры, профилактика рецидивов</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Отзывы</p>
+        <h2 class="h2">4,7 из 5 — наш рейтинг<br>по отзывам пациентов<br><span class="gold">на Яндекс Картах</span></h2>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="carPrev" aria-label="Предыдущий отзыв">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18l-6-6l6-6"/></svg>
+        </button>
+        <button class="carousel-btn active" id="carNext" aria-label="Следующий отзыв">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18l6-6l-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="testimonials-viewport">
+      <div class="row-grid testimonials-track" id="testimonialsTrack">
+        <div class="card testimonial-card">
+          <div class="testimonial-head">
+            <img src="assets/img/review-1.jpg" alt="Юлия Витюк" class="avatar-img" loading="lazy">
+            <div>
+              <p class="testimonial-name">Юлия Витюк</p>
+              <div class="stars">★★★★☆</div>
+            </div>
+          </div>
+          <p class="testimonial-text">«Удобно, качественно, дорого. Врачи высокой профессиональной подготовки».</p>
+        </div>
+        <div class="card testimonial-card">
+          <div class="testimonial-head">
+            <img src="assets/img/review-2.jpg" alt="Саша Жвач" class="avatar-img" loading="lazy">
+            <div>
+              <p class="testimonial-name">Саша Жвач</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">«Ставил элайнеры — практически незаметны на зубах. Удобно исправлять прикус, не привлекая внимания».</p>
+        </div>
+        <div class="card testimonial-card">
+          <div class="testimonial-head">
+            <img src="assets/img/review-3.jpg" alt="Ольга Бакланова" class="avatar-img" loading="lazy">
+            <div>
+              <p class="testimonial-name">Ольга Бакланова</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">«Спасибо за добрый подход к ребёнку, который боялся стоматологов. Врач сумел найти к нему подход».</p>
+        </div>
+        <div class="card testimonial-card">
+          <div class="testimonial-head">
+            <img src="assets/img/review-4.jpg" alt="Гена Обломов" class="avatar-img" loading="lazy">
+            <div>
+              <p class="testimonial-name">Гена Обломов</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">«Обратился с зубной болью — приняли быстро, без очередей. Врач внимательно осмотрел, всё подробно объяснил».</p>
+        </div>
+        <div class="card testimonial-card">
+          <div class="testimonial-head">
+            <img src="assets/img/review-5.jpg" alt="Полина Роднина" class="avatar-img" loading="lazy">
+            <div>
+              <p class="testimonial-name">Полина Роднина</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">«Исправила прикус элайнерами — практически незаметны были. Результат того стоит».</p>
+        </div>
+        <div class="card testimonial-card">
+          <div class="testimonial-head">
+            <img src="assets/img/review-6.jpg" alt="Ден Чесноков" class="avatar-img" loading="lazy">
+            <div>
+              <p class="testimonial-name">Ден Чесноков</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">«Стоматолог-пародонтолог Лукина — настоящий специалист своего дела! Подробно объясняла каждый шаг».</p>
+        </div>
+        <div class="card testimonial-card">
+          <div class="testimonial-head">
+            <img src="assets/img/review-7.jpg" alt="Олеся" class="avatar-img" loading="lazy">
+            <div>
+              <p class="testimonial-name">Олеся</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">«Осталась в восторге от протезирования — результат превзошёл ожидания».</p>
+        </div>
+        <div class="card testimonial-card">
+          <div class="testimonial-head">
+            <img src="assets/img/review-8.jpg" alt="Мехин Дадашова" class="avatar-img" loading="lazy">
+            <div>
+              <p class="testimonial-name">Мехин Дадашова</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">«Отличный персонал и врачи-профессионалы своего дела, к каждому пациенту подходят бережно».</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA (full-bleed, matches source: single image bg with L-to-R gradient) -->
+  <section class="cta-section" id="prices">
+    <div class="cta-bg" style="background-image:url('assets/img/cta-smile.jpg')"></div>
+    <div class="cta-gradient"></div>
+    <div class="cta-inner">
+    <div class="cta-content">
+      <p class="eyebrow">Начните сегодня</p>
+      <h2 class="cta-title">
+        ВАША УЛЫБКА<br>
+        НАЧИНАЕТСЯ<br>
+        <span class="shimmer-text">С ПЕРВОГО ВИЗИТА</span>
+      </h2>
+      <p class="lead cta-lead">Запишитесь на бесплатную консультацию и получите план лечения уже сегодня.</p>
+      <div class="cta-actions">
+        <button type="button" class="btn btn-primary btn-lg glow-btn" data-open-booking>Записаться на приём</button>
+        <a href="tel:+73424249500" class="btn btn-outline btn-lg">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"/></svg>
+          +7 (3424) 24-95-00
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" id="contacts">
+  <div class="footer-inner">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo">32<span class="accent">+</span></span>
+      <p class="footer-tagline">Премиальная стоматология. Мы создаём улыбки с 2002 года.</p>
+      <div class="social-row">
+        <a href="https://vk.com/clinic32plus" target="_blank" rel="noopener" aria-label="ВКонтакте" class="social-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974H.508c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708"/></svg>
+        </a>
+        <a href="https://max.ru/u/f9LHodD0cOLd8amhDcIEOdSbOtR_dUx0WOgcixPgokrPBUiei7ydpuLQ7Y4" target="_blank" rel="noopener" aria-label="Max" class="social-btn">
+          <svg width="16" height="16" viewBox="0 0 720 720" fill="currentColor"><path d="M350.4,9.6C141.8,20.5,4.1,184.1,12.8,390.4c3.8,90.3,40.1,168,48.7,253.7,2.2,22.2-4.2,49.6,21.4,59.3,31.5,11.9,79.8-8.1,106.2-26.4,9-6.1,17.6-13.2,24.2-22,27.3,18.1,53.2,35.6,85.7,43.4,143.1,34.3,299.9-44.2,369.6-170.3C799.6,291.2,622.5-4.6,350.4,9.6h0ZM269.4,504c-11.3,8.8-22.2,20.8-34.7,27.7-18.1,9.7-23.7-.4-30.5-16.4-21.4-50.9-24-137.6-11.5-190.9,16.8-72.5,72.9-136.3,150-143.1,78-6.9,150.4,32.7,183.1,104.2,72.4,159.1-112.9,316.2-256.4,218.6h0Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <nav class="footer-col">
+      <p class="eyebrow small">Услуги</p>
+      <a href="#" class="footer-link">Имплантация</a>
+      <a href="#" class="footer-link">Протезирование</a>
+      <a href="#" class="footer-link">Ортодонтия</a>
+      <a href="#" class="footer-link">Отбеливание</a>
+      <a href="#" class="footer-link">Хирургия</a>
+    </nav>
+
+    <div class="footer-col">
+      <p class="eyebrow small">Пациентам</p>
+      <p class="footer-link static">ООО «МЕДИЛЮКС»<br>ИНН 5911044361</p>
+      <p class="footer-hours">Мы на картах: <a href="https://yandex.ru/maps/?text=%D0%91%D0%B5%D1%80%D0%B5%D0%B7%D0%BD%D0%B8%D0%BA%D0%B8%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9F%D1%8F%D1%82%D0%B8%D0%BB%D0%B5%D1%82%D0%BA%D0%B8%2C%20110" target="_blank" rel="noopener">Яндекс.Карты</a> · <a href="https://2gis.ru/search/%D0%91%D0%B5%D1%80%D0%B5%D0%B7%D0%BD%D0%B8%D0%BA%D0%B8%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9F%D1%8F%D1%82%D0%B8%D0%BB%D0%B5%D1%82%D0%BA%D0%B8%2C%20110" target="_blank" rel="noopener">2ГИС</a></p>
+    </div>
+
+    <div class="footer-col">
+      <p class="eyebrow small">Контакты</p>
+      <p class="footer-link static">г. Березники, ул. Пятилетки, 110</p>
+      <a href="tel:+73424249500" class="footer-link">+7 (3424) 24-95-00</a>
+      <a href="tel:+79519549500" class="footer-link">+7 (951) 954-95-00</a>
+      <a href="mailto:32plus@mail.ru" class="footer-link">32plus@mail.ru</a>
+      <p class="footer-hours">Пн–Пт: 09:00–19:00<br>Сб: 09:00–15:00<br>Вс: выходной</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2024 32+ Стоматология. Все права защищены.</p>
+    <div class="footer-legal">
+      <a href="#">Политика конфиденциальности</a>
+      <a href="#">Пользовательское соглашение</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Наверх">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ALL SERVICES MODAL -->
+<div class="modal-overlay" id="servicesModalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="servicesModalTitle">
+    <div class="modal-head">
+      <div>
+        <p class="eyebrow">Полный перечень</p>
+        <h3 id="servicesModalTitle" class="modal-title">Все услуги клиники</h3>
+      </div>
+      <button class="modal-close" id="servicesModalClose" aria-label="Закрыть">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="modal-groups">
+      <div class="modal-group">
+        <p class="modal-group-title">Лечение</p>
+        <ul class="modal-list">
+          <li>Лечение кариеса</li>
+          <li>Лечение пульпита и периодонтита</li>
+          <li>Лечение под микроскопом</li>
+          <li>Лечение пародонтита аппаратом Vector</li>
+        </ul>
+      </div>
+
+      <div class="modal-group">
+        <p class="modal-group-title">Имплантация и протезирование</p>
+        <ul class="modal-list">
+          <li>Имплантация зубов</li>
+          <li>Протезирование (несъёмные конструкции)</li>
+          <li>Съёмные протезы</li>
+        </ul>
+      </div>
+
+      <div class="modal-group">
+        <p class="modal-group-title">Ортодонтия</p>
+        <ul class="modal-list">
+          <li>Выравнивание зубов</li>
+          <li>Исправление прикуса элайнерами</li>
+          <li>Исправление прикуса без брекетов (съёмные пластины)</li>
+        </ul>
+      </div>
+
+      <div class="modal-group">
+        <p class="modal-group-title">Хирургия</p>
+        <ul class="modal-list">
+          <li>Безболезненное удаление зубов</li>
+        </ul>
+      </div>
+
+      <div class="modal-group">
+        <p class="modal-group-title">Гигиена и профилактика</p>
+        <ul class="modal-list">
+          <li>Профессиональная чистка зубов</li>
+          <li>Профессиональная гигиена</li>
+        </ul>
+      </div>
+
+      <div class="modal-group">
+        <p class="modal-group-title">Диагностика</p>
+        <ul class="modal-list">
+          <li>Компьютерная томография зубов</li>
+          <li>Ортопантомограмма (ОПТГ)</li>
+        </ul>
+      </div>
+
+      <div class="modal-group">
+        <p class="modal-group-title">Эстетика и дети</p>
+        <ul class="modal-list">
+          <li>Эстетическая стоматология</li>
+          <li>Детская стоматология</li>
+        </ul>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary modal-cta" id="modalCtaBtn" data-open-booking>Записаться на приём</button>
+  </div>
+</div>
+
+<!-- BOOKING FORM MODAL -->
+<div class="modal-overlay" id="bookingModalOverlay">
+  <div class="modal modal-form" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+    <div class="modal-head">
+      <div>
+        <p class="eyebrow">Онлайн-запись</p>
+        <h3 id="bookingModalTitle" class="modal-title">Записаться на приём</h3>
+      </div>
+      <button class="modal-close" id="bookingModalClose" aria-label="Закрыть">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <form id="bookingForm" novalidate>
+      <div class="form-field">
+        <label for="bkName">Ваше имя</label>
+        <input type="text" id="bkName" name="Имя" placeholder="Как к вам обращаться" autocomplete="name">
+      </div>
+      <div class="form-field">
+        <label for="bkPhone">Телефон</label>
+        <input type="tel" id="bkPhone" name="Телефон" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+      </div>
+      <div class="form-field">
+        <label for="bkComment">Комментарий <span>— необязательно</span></label>
+        <textarea id="bkComment" name="Комментарий" rows="3" placeholder="Например: нужна консультация ортодонта"></textarea>
+      </div>
+      <p class="form-note">Нажимая «Отправить заявку», вы соглашаетесь на обработку персональных данных.</p>
+      <button type="submit" class="btn btn-primary btn-lg form-submit" id="bookingSubmit">Отправить заявку</button>
+      <p class="form-status" id="bookingStatus" hidden></p>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js?v=4"></script>
+</body>
+</html>
