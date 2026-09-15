@@ -525,6 +525,8 @@ p { margin: 0; }
 .footer-legal { display: flex; gap: 24px; }
 .footer-legal a { font-size: 13px; color: var(--muted); transition: color 0.2s ease; }
 .footer-legal a:hover { color: var(--gold); }
+.footer-credit span { color: var(--gold); text-decoration: underline; text-underline-offset: 4px; }
+.footer-credit:hover span { color: var(--gold); }
 
 @media (max-width: 900px) {
   .footer-top { flex-wrap: wrap; gap: 40px; }
