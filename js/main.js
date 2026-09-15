@@ -20,6 +20,13 @@
   /* Mobile nav toggle */
   const menuToggle = document.getElementById("menuToggle");
   const mainNav = document.getElementById("mainNav");
+  const navClose = document.getElementById("navClose");
+
+  const closeNav = () => {
+    mainNav.classList.remove("open");
+    menuToggle.classList.remove("open");
+    document.body.style.overflow = "";
+  };
 
   menuToggle.addEventListener("click", () => {
     const isOpen = mainNav.classList.toggle("open");
@@ -27,12 +34,17 @@
     document.body.style.overflow = isOpen ? "hidden" : "";
   });
 
+  navClose.addEventListener("click", closeNav);
+
   mainNav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      mainNav.classList.remove("open");
-      menuToggle.classList.remove("open");
-      document.body.style.overflow = "";
-    });
+    link.addEventListener("click", closeNav);
+  });
+
+  /* Close mobile nav when clicking outside of it */
+  document.addEventListener("click", (e) => {
+    if (!mainNav.classList.contains("open")) return;
+    if (mainNav.contains(e.target) || menuToggle.contains(e.target)) return;
+    closeNav();
   });
 
   /* Scroll reveal for elements marked .reveal (cards/sections below the fold) */

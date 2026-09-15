@@ -211,6 +211,9 @@ p { margin: 0; }
 }
 .icon-btn span { width: 16px; height: 1.5px; background: var(--foreground); transition: transform 0.3s ease, opacity 0.3s ease; }
 
+/* Close button inside mobile nav drawer */
+.nav-close { display: none; }
+
 /* ==========================================================================
    Hero — fixed-height cinematic banner, bottom-left anchored content
    ========================================================================== */
@@ -576,6 +579,14 @@ p { margin: 0; }
   .phone-link { display: none; }
   .btn-sm { display: none; }
   .icon-btn { display: flex; }
+  .nav-close {
+    display: flex; position: absolute; top: 22px; right: 22px;
+    width: 40px; height: 40px; align-items: center; justify-content: center;
+    border: 1px solid var(--border); border-radius: var(--radius-sm); background: transparent;
+    color: var(--foreground); cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .nav-close:hover { color: var(--gold); border-color: var(--gold); }
   .icon-btn.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
   .icon-btn.open span:nth-child(2) { opacity: 0; }
   .icon-btn.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
