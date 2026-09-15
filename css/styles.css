@@ -225,20 +225,20 @@ p { margin: 0; }
 .hero-bg {
   position: absolute; inset: 0;
   background-size: cover; background-position: center 30%;
-  filter: brightness(0.4) saturate(0.5) sepia(0.35) contrast(1.15);
+  filter: brightness(0.72) saturate(0.65) sepia(0.25) contrast(1.08);
   animation: fadeIn 1.4s ease both, heroZoom 26s ease-in-out infinite alternate;
   transform-origin: center;
 }
 .hero-bg::after {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(115deg, rgba(30,20,5,0.55) 0%, rgba(15,10,5,0.35) 45%, rgba(10,10,10,0.5) 100%);
+  background: linear-gradient(115deg, rgba(30,20,5,0.3) 0%, rgba(15,10,5,0.15) 45%, rgba(10,10,10,0.25) 100%);
   mix-blend-mode: multiply;
 }
 @keyframes heroZoom { from { transform: scale(1.02); } to { transform: scale(1.1); } }
 
 .hero-gradient-b { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.6) 0%, rgba(10,10,10,0.3) 50%, var(--bg) 100%); }
-.hero-gradient-r { position: absolute; inset: 0; background: linear-gradient(to right, rgba(10,10,10,0.7) 0%, transparent 50%, transparent 100%); }
+.hero-gradient-r { position: absolute; inset: 0; background: linear-gradient(to right, rgba(10,10,10,0.45) 0%, transparent 50%, transparent 100%); }
 
 .hero-inner { position: absolute; inset: 0; max-width: 1440px; margin: 0 auto; z-index: 2; }
 
